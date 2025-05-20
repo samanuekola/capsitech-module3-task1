@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 
 const App = () => {
-  function validates(values) {
+  function validate(values) {
     const errors = {};
 
     if (!values.name) {
@@ -35,7 +35,7 @@ const App = () => {
       email: '',
       course: ''
     },
-    validates,
+    validate,
     onSubmit: (values) => {
       alert('Form submitted!');
       console.log(values);
